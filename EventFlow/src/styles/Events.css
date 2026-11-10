@@ -1,0 +1,303 @@
+/* Upcoming events and registration management. */
+.events-page {
+  padding-bottom: 15px;
+}
+.events-view-toggle {
+  display: flex;
+  gap: 25px;
+  border-bottom: 1px solid #e8deeb;
+  margin-bottom: 32px;
+}
+.events-view-toggle button {
+  border: 0;
+  background: none;
+  color: #9b85a4;
+  font-size: 14px;
+  padding: 0 0 14px;
+}
+.events-view-toggle button.selected {
+  color: #795294;
+  border-bottom: 2px solid #9965b4;
+  font-weight: 600;
+}
+.events-view-toggle button span {
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: #eee4f3;
+  font-size: 11.5px;
+  margin-left: 5px;
+}
+.events-page .section-heading h2 {
+  font-size: 25px;
+}
+.manage-bookings {
+  border: 1px solid #e6dbe9;
+  border-radius: 9px;
+  background: #fffdf9;
+  padding: 25px;
+  margin-top: 32px;
+}
+.manage-bookings h2 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+.manage-bookings > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid #eee6f1;
+}
+.manage-bookings p {
+  font-size: 14px;
+}
+.manage-bookings small {
+  display: block;
+  margin-top: 7px;
+  font-size: 11.5px;
+  color: #9d85a6;
+}
+.manage-bookings button {
+  border: 1px solid #e1d6e8;
+  background: #f7f1f8;
+  color: #9b769f;
+  font-size: 11.5px;
+  padding: 10px 13px;
+  border-radius: 5px;
+}
+@media (max-width: 640px) {
+  .events-page .section-heading h2 {
+    font-size: 23px;
+  }
+  .manage-bookings {
+    padding: 20px;
+  }
+  .manage-bookings > div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .events-view-toggle {
+    gap: 23px;
+  }
+}
+/* Event management fits into Events without adding another main page. */
+.events-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e8deeb;
+}
+.events-toolbar .events-view-toggle {
+  margin-bottom: 0;
+  border-bottom: 0;
+  gap: 23px;
+  padding-top: 10px;
+}
+.events-toolbar > .button {
+  margin-bottom: 10px;
+}
+.created-events {
+  display: grid;
+  gap: 18px;
+}
+.created-event {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 21px;
+  border: 1px solid #e7dcea;
+  background: #fffdfa;
+  border-radius: 10px;
+}
+.created-event > img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.created-event-copy {
+  flex: 1;
+  min-width: 150px;
+}
+.created-event-copy h3 {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+.created-event-copy p {
+  color: #987da4;
+  font-size: 12.5px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.created-event-copy small {
+  display: block;
+  color: #a08baa;
+  font-size: 11.5px;
+  margin-top: 7px;
+}
+.created-event-actions {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.delete-link {
+  border: 0;
+  background: none;
+  color: #ac6e7e;
+  font-size: 11.5px;
+}
+.delete-confirm {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  border-top: 1px solid #f0e1e5;
+  padding-top: 19px;
+  margin-top: 3px;
+}
+.delete-confirm > div {
+  flex: 1;
+  min-width: 0;
+}
+.delete-confirm strong {
+  font-size: 14px;
+  color: #9b5e74;
+  overflow-wrap: anywhere;
+}
+.delete-confirm p {
+  color: #a78694;
+  font-size: 11.5px;
+  line-height: 1.8;
+  margin-top: 7px;
+}
+.button.danger {
+  background: #ac667d;
+  color: #fff;
+}
+.booking-hint {
+  padding: 18px;
+  text-align: center;
+  color: #9277a3;
+  font-size: 14px;
+}
+.registration-login > p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #987da4;
+  margin: 0 0 22px;
+}
+.registration-login .form-note a {
+  color: #81539f;
+}
+.modal input[readonly] {
+  background: #f7f3f9;
+  color: #927ba0;
+}
+.storage-warning {
+  background: #fbf0db;
+  color: #94794c;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 14px 25px;
+}
+.events-page .demo-note {
+  line-height: 1.9;
+}
+@media (max-width: 1100px) {
+  .navigation {
+    gap: 18px;
+  }
+  .nav-account {
+    gap: 15px;
+  }
+}
+@media (min-width: 641px) and (max-width: 900px) {
+  .nav-container {
+    gap: 16px;
+  }
+  .navigation {
+    gap: 12px;
+    font-size: 14px;
+  }
+  .nav-account {
+    gap: 10px;
+  }
+  .navigation .button {
+    padding: 10px 12px;
+    font-size: 12.5px;
+  }
+  .navigation > a {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 900px) {
+  .events-toolbar {
+    align-items: stretch;
+    flex-direction: column-reverse;
+    gap: 13px;
+  }
+  .events-toolbar > .button {
+    align-self: flex-end;
+    margin: 0;
+  }
+  .created-event-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .delete-confirm {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .delete-confirm > div {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .events-toolbar .events-view-toggle {
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .events-toolbar .events-view-toggle button {
+    font-size: 11.5px;
+  }
+  .events-view-toggle button span {
+    font-size: 10.5px;
+    margin-left: 1px;
+    padding: 3px 5px;
+  }
+  .created-event {
+    padding: 17px;
+    gap: 16px;
+  }
+  .created-event > img {
+    width: 80px;
+    height: 90px;
+  }
+  .created-event-copy {
+    min-width: 130px;
+  }
+  .created-event-copy h3 {
+    font-size: 18px;
+  }
+  .created-event-copy p {
+    font-size: 11.5px;
+  }
+  .created-event-actions {
+    border-top: 1px solid #eee3f1;
+    padding-top: 15px;
+  }
+  .events-page .empty-state h2 {
+    font-size: 23px;
+    line-height: 1.5;
+  }
+  .navigation.open {
+    gap: 0;
+  }
+}
